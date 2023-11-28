@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+    <style>
+        .red{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="id" class="class">Hello, World!</h1>
+    <button onclick="changeText()">Click me</button>
+    <script>
+        var number = 10;
+        var text = 'Hello, World!';
+        var isTrue = true;
+
+        var number = number +5;
+        text = 'Javascript is fun!';
+        console.log(isTrue);
+
+        var elementById = document.getElementById('id');
+        var elementByCladdd = document.getElementsByClassName('class');
+
+        var element = document.getElementById('unique');
+        element.classList.add('new-class');
+        element.classList.remove('old-class');
+        element.classList.toggle('toggle-class');
+
+        function changeText(){
+            var text = document.getElementById('id');
+            text.classList.toggle('red');
+        }
+    </script>
+</body>
+</html>
